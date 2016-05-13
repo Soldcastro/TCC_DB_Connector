@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DB Connector</string>
+    <string name="action_settings">Settings</string>
+    <string name="sgbd">SGBD:</string>
+    <string name="name">Name:</string>
+    <string name="clear">Clear</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="pass">Pass:</string>
+    <string name="user">User:</string>
+    <string name="host">Host:</string>
+    <string-array name="sgbds_array">
+        <item>MySQL</item>
+        <item>SQL Server</item>
+    </string-array>
+</resources>
