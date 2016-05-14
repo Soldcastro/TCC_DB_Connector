@@ -30,8 +30,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
- //       Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
- //       setSupportActionBar(toolbar);
+
         //Define as variáveis e associa os inputs
         cap_host = (EditText) findViewById(R.id.editText);
         cap_user = (EditText) findViewById(R.id.editText2);
