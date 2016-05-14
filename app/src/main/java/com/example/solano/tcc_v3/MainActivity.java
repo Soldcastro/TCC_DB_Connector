@@ -23,7 +23,6 @@ public class MainActivity extends Activity {
     private EditText cap_user;
     private EditText cap_pass;
     private Button btn_ok;
-    private Button btn_cancel;
     private Button btn_clr;
     private Spinner spinner_sgbds;
 
@@ -38,7 +37,6 @@ public class MainActivity extends Activity {
         cap_user = (EditText) findViewById(R.id.editText2);
         cap_pass = (EditText) findViewById(R.id.editText3);
         btn_ok = (Button) findViewById(R.id.button);
-        btn_cancel = (Button) findViewById(R.id.button2);
         btn_clr = (Button) findViewById(R.id.button3);
         spinner_sgbds = (Spinner) findViewById(R.id.spinner);
 

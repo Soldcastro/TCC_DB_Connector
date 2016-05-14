@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:text="@string/save"
         android:id="@+id/button"
-        android:layout_gravity="center"
+        android:layout_gravity="center|right"
         android:layout_below="@+id/spinner"
         android:layout_alignRight="@+id/editText3"
         android:layout_alignEnd="@+id/editText3" />
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:text="@string/clear"
         android:id="@+id/button3"
-        android:layout_gravity="center"
+        android:layout_gravity="center|left"
         android:layout_alignTop="@+id/button"
         android:layout_toLeftOf="@+id/button"
         android:layout_toStartOf="@+id/button" />
@@ -103,7 +103,6 @@
         android:layout_gravity="center|right"
         android:layout_alignTop="@+id/textView6"
         android:layout_toEndOf="@+id/textView6"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
+        android:layout_toRightOf="@+id/textView6" />
 
 </RelativeLayout>

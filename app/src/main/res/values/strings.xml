@@ -13,5 +13,5 @@
     <string name="user">User</string>
     <string name="password">Password</string>
     <string name="name">Name</string>
-    <string name="host_ip_adress">Host/IP Adress</string>
+
 </resources>
