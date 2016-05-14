@@ -2,29 +2,16 @@
     <string name="app_name">DB Connector</string>
     <string name="action_settings">Settings</string>
     <string name="sgbd">SGBD:</string>
-    <string name="name">Name:</string>
     <string name="clear">Clear</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
-    <string name="pass">Pass:</string>
-    <string name="user">User:</string>
-    <string name="host">Host:</string>
     <string-array name="sgbds_array">
         <item>MySQL</item>
         <item>SQL Server</item>
     </string-array>
-        <string name="title_activity_adicionar_conexao">Sign in</string>
-
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
+    <string name="host_ip_address">Host/IP Address</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="host_ip_adress">Host/IP Adress</string>
 </resources>
