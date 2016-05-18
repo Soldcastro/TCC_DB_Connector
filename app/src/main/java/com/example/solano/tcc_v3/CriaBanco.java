@@ -12,6 +12,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class CriaBanco extends SQLiteOpenHelper {
     protected static final String DATABASE_NAME = "connections.db";
     protected static final String TABLE = "connections";
+    protected static final String ID = "id";
     protected static final String NAME = "name";
     protected static final String HOST = "host";
     protected static final String USER = "user";
@@ -26,6 +27,7 @@ public class CriaBanco extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String sql = "CREATE TABLE" + TABLE + "("
+                + ID + "integer primary key autoincrement,"
                 + NAME + "text,"
                 + HOST + "text,"
                 + USER + "text,"

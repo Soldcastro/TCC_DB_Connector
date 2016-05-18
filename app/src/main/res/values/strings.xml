@@ -5,6 +5,8 @@
     <string name="clear">Clear</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
     <string-array name="sgbds_array">
         <item>MySQL</item>
         <item>SQL Server</item>
@@ -13,5 +15,9 @@
     <string name="user">User</string>
     <string name="password">Password</string>
     <string name="name">Name</string>
+    <string name="title_activity_seleciona_conexao">SelecionaConexao</string>
+    <string name="title_activity_envia_comando">EnviaComando</string>
+    <string name="input_your_query_here">Input your query here.</string>
+    <string name="command">Command</string>
 
 </resources>

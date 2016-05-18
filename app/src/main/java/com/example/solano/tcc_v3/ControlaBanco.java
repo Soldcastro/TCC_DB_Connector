@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 /**
  * Created by Solano on 14/05/2016.
  */
-public class ControlaBanco {
+public class ControlaBanco  {
 
     private SQLiteDatabase db;
     private CriaBanco banco;

@@ -27,7 +27,7 @@ public class AdicionaConexao extends AppCompatActivity  {
     }
 
     public void addItemOnSpinner() {
-        Spinner spinner_sgbds = (Spinner) findViewById(R.id.spinner);
+        Spinner spinner_sgbds = (Spinner) findViewById(R.id.spinner_1);
         //Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.sgbds_array, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
@@ -38,7 +38,7 @@ public class AdicionaConexao extends AppCompatActivity  {
     }
 
     public void addListenerOnSpinnerItemSelection() {
-        Spinner spinner_sgbds = (Spinner) findViewById(R.id.spinner);
+        Spinner spinner_sgbds = (Spinner) findViewById(R.id.spinner_1);
         spinner_sgbds.setOnItemSelectedListener(new CustomOnItemSelectedListener());
     }
 
@@ -49,7 +49,7 @@ public class AdicionaConexao extends AppCompatActivity  {
           EditText cap_host = (EditText) findViewById(R.id.editText);
           EditText cap_user = (EditText) findViewById(R.id.editText2);
           EditText cap_pass = (EditText) findViewById(R.id.editText3);
-          Spinner spinner_sgbds = (Spinner) findViewById(R.id.spinner);
+          Spinner spinner_sgbds = (Spinner) findViewById(R.id.spinner_1);
 
           @Override
           public void onClick(View v) {

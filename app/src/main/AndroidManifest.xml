@@ -25,7 +25,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AdicionaConexao"></activity>
+        <activity android:name=".AdicionaConexao" />
+        <activity
+            android:name=".SelecionaConexao"
+            android:label="@string/title_activity_seleciona_conexao"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EditaConexao" />
+        <activity
+            android:name=".EnviaComando"
+            android:label="@string/title_activity_envia_comando"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
