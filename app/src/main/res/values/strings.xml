@@ -19,5 +19,7 @@
     <string name="title_activity_envia_comando">EnviaComando</string>
     <string name="input_your_query_here">Input your query here.</string>
     <string name="command">Command</string>
+    <string name="title_activity_adiciona_conexao2">AdicionaConexao2</string>
+    <string name="title_activity_edita_conexao2">EditaConexao2</string>
 
 </resources>

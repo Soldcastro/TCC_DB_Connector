@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 
 public class CriaBanco extends SQLiteOpenHelper {
-    protected static final String DATABASE_NAME = "connections.db";
+    protected static final String DATABASE_NAME = "db_connector.db";
     protected static final String TABLE = "connections";
     protected static final String ID = "id";
     protected static final String NAME = "name";
@@ -18,10 +18,10 @@ public class CriaBanco extends SQLiteOpenHelper {
     protected static final String USER = "user";
     protected static final String PASSWORD = "password";
     protected static final String SGBD = "sgbd";
-    protected static final int VERSAO = 1;
+    protected static final int VERSION = 1;
 
     public CriaBanco(Context context) {
-        super(context, DATABASE_NAME, null, VERSAO);
+        super(context, DATABASE_NAME, null, VERSION);
     }
 
     @Override

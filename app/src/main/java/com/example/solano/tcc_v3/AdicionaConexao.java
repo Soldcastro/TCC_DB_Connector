@@ -43,30 +43,30 @@ public class AdicionaConexao extends AppCompatActivity  {
     }
 
     public void addListenerOnButton(){
-      btn_ok.setOnClickListener(new View.OnClickListener() {
+        btn_ok.setOnClickListener(new View.OnClickListener() {
 
-          EditText cap_name = (EditText) findViewById(R.id.editText4);
-          EditText cap_host = (EditText) findViewById(R.id.editText);
-          EditText cap_user = (EditText) findViewById(R.id.editText2);
-          EditText cap_pass = (EditText) findViewById(R.id.editText3);
-          Spinner spinner_sgbds = (Spinner) findViewById(R.id.spinner_1);
+            EditText cap_name = (EditText) findViewById(R.id.editText4);
+            EditText cap_host = (EditText) findViewById(R.id.editText);
+            EditText cap_user = (EditText) findViewById(R.id.editText2);
+            EditText cap_pass = (EditText) findViewById(R.id.editText3);
+            Spinner spinner_sgbds = (Spinner) findViewById(R.id.spinner_1);
 
-          @Override
-          public void onClick(View v) {
-              ControlaBanco crud = new ControlaBanco(getBaseContext());
+            @Override
+            public void onClick(View v) {
+                ControlaBanco crud = new ControlaBanco(getBaseContext());
 
-              String name = cap_name.getText().toString();
-              String host = cap_host.getText().toString();
-              String user = cap_user.getText().toString();
-              String pass = cap_pass.getText().toString();
-              String sgbd = String.valueOf(spinner_sgbds.getSelectedItem());
-              String result;
+                String name = cap_name.getText().toString();
+                String host = cap_host.getText().toString();
+                String user = cap_user.getText().toString();
+                String pass = cap_pass.getText().toString();
+                String sgbd = String.valueOf(spinner_sgbds.getSelectedItem());
+                String result;
 
-              result = crud.insereDado(name,host,user,pass,sgbd);
+                result = crud.insereDado(name,host,user,pass,sgbd);
 
-              Toast.makeText(getApplicationContext(),result,Toast.LENGTH_LONG);
-          }
-      });
+                Toast.makeText(getApplicationContext(),result,Toast.LENGTH_LONG);
+            }
+        });
 
     }
 }
