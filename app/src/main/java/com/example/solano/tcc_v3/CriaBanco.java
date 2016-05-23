@@ -10,36 +10,41 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 
 public class CriaBanco extends SQLiteOpenHelper {
-    protected static final String DATABASE_NAME = "db_connector.db";
+
+    private static final String DATABASE_NAME = "db_connector.db";
     protected static final String TABLE = "connections";
-    protected static final String ID = "id";
-    protected static final String NAME = "name";
-    protected static final String HOST = "host";
-    protected static final String USER = "user";
-    protected static final String PASSWORD = "password";
-    protected static final String SGBD = "sgbd";
-    protected static final int VERSION = 1;
+    protected static final String ID = "id\u00A0";
+    protected static final String NAME = "name\u00A0";
+    protected static final String HOST = "host\u00A0";
+    protected static final String USER = "user\u00A0";
+    protected static final String PASSWORD = "password\u00A0";
+    protected static final String SGBD = "sgbd\u00A0";
+    private static final int VERSION = 1;
+
 
     public CriaBanco(Context context) {
         super(context, DATABASE_NAME, null, VERSION);
     }
 
-    @Override
-    public void onCreate(SQLiteDatabase db) {
-        String sql = "CREATE TABLE" + TABLE + "("
-                + ID + "integer primary key autoincrement,"
-                + NAME + "text,"
-                + HOST + "text,"
-                + USER + "text,"
-                + PASSWORD + "text,"
-                + SGBD + "text"
-                + ")";
-        db.execSQL(sql);
-    }
 
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS" + TABLE);
-        onCreate(db);
-    }
+            public void onCreate (SQLiteDatabase db){
+                String sql = "CREATE TABLE " + TABLE + "("
+                        + ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                        + NAME + " TEXT,"
+                        + HOST + " TEXT,"
+                        + USER + " TEXT,"
+                        + PASSWORD + " TEXT,"
+                        + SGBD + " TEXT"
+                        + ")";
+                db.execSQL(sql);
+            }
+
+
+        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+            db.execSQL("DROP TABLE IF EXISTS" + TABLE);
+            onCreate(db);
+        }
 }
+
+
+

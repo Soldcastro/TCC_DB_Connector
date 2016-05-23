@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class SelecionaConexao extends AppCompatActivity {
 
-    private ListView lista;
+    protected ListView lista;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
