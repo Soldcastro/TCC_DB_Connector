@@ -13,12 +13,12 @@ public class CriaBanco extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "db_connector.db";
     protected static final String TABLE = "connections";
-    protected static final String ID = "id\u00A0";
-    protected static final String NAME = "name\u00A0";
-    protected static final String HOST = "host\u00A0";
-    protected static final String USER = "user\u00A0";
-    protected static final String PASSWORD = "password\u00A0";
-    protected static final String SGBD = "sgbd\u00A0";
+    protected static final String ID = "_id";
+    protected static final String NAME = "name";
+    protected static final String HOST = "host";
+    protected static final String USER = "user";
+    protected static final String PASSWORD = "password";
+    protected static final String SGBD = "sgbd";
     private static final int VERSION = 1;
 
 
