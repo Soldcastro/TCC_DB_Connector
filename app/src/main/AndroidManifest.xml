@@ -19,6 +19,8 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AdicionaConexao"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SelecionaConexao"
             android:label="@string/title_activity_seleciona_conexao"

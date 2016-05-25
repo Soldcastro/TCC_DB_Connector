@@ -19,7 +19,7 @@ public class AdicionaConexao extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adiciona_conexao);
-
+        btn_ok =(Button) findViewById(R.id.btnSave);
         addItemOnSpinner();
         addListenerOnButton();
         addListenerOnSpinnerItemSelection();
